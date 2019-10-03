@@ -1,0 +1,51 @@
+// Place your key bindings in this file to overwrite the defaults
+[
+	{
+		"command": "editor.action.transformToUppercase",
+		"key": "ctrl+alt+u",
+		"when": "editorTextFocus"
+	},
+	{
+		"command": "editor.action.transformToLowercase",
+		"key": "ctrl+alt+l",
+		"when": "editorTextFocus"
+	},
+	{
+		"command": "cursorWordPartRight",
+		"key": "ctrl+alt+right",
+		"when": "textInputFocus"
+	},
+	{
+		"command": "cursorWordPartRightSelect",
+		"key": "ctrl+shift+alt+right",
+		"when": "textInputFocus"
+	},
+	{
+		"command": "cursorWordPartStartLeft",
+		"key": "ctrl+alt+left",
+		"when": "textInputFocus"
+	},
+	{
+		"command": "cursorWordPartStartLeftSelect",
+		"key": "ctrl+shift+alt+left",
+		"when": "textInputFocus"
+	},
+	{
+		"command": "deleteWordPartLeft",
+		"key": "ctrl+alt+backspace",
+		"when": "textInputFocus && !editorReadonly"
+	},
+	{
+		"command": "deleteWordPartRight",
+		"key": "ctrl+shift+alt+backspace",
+		"when": "textInputFocus && !editorReadonly"
+	},
+	{
+		"command": "workbench.action.moveEditorToNextGroup",
+		"key": "ctrl+alt+."
+	},
+	{
+		"command": "workbench.action.moveEditorToPreviousGroup",
+		"key": "ctrl+alt+,"
+	}
+]
