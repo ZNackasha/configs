@@ -1,0 +1,14 @@
+[alias]
+	graph = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	branch-name = ! git branch | grep \\* | cut -d ' ' -f2
+	new-branch = ! git checkout -b
+	state = status -sb
+	amend = commit --amend --no-edit
+	sync = ! git fetch --all && git rebase origin/$(git br)
+	aliases = ! git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1\\t=> \\2/' | sort
+	master = checkout master
+[core]
+	autocrlf = true
+[user]
+	name = Zaid Nackasha
+	email = znackasha@intrepidcs.com
