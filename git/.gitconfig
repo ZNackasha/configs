@@ -7,6 +7,7 @@
 	sync = ! git fetch --all && git rebase origin/$(git br)
 	aliases = ! git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1\\t=> \\2/' | sort
 	master = checkout master
+	rm-submodule = ! ~/.gitscripts/rm-submodule.sh 
 [core]
 	autocrlf = true
 [user]
