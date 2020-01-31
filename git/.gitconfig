@@ -9,8 +9,12 @@
 	master = checkout master
 	rm-submodule = ! ~/.gitscripts/rm-submodule.sh 
 	ignorefy = ! get rm -r --cached . && git add .
+	rename-branch = branch -m
+	post = ! git push --set-upstream origin $(git branch-name)
 [core]
 	autocrlf = true
+[merge]
+	conflictstyle = diff3
 [user]
 	name = Zaid Nackasha
 	email = zaidnackasha22@gmail.com
