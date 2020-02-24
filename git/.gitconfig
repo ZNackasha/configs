@@ -5,6 +5,7 @@
 	state = status -sb
 	amend = commit --amend --no-edit
 	sync = ! git fetch --all && git rebase origin/$(git br)
+	trash = ! git fetch && git reset --hard origin/$(git branch-name)
 	aliases = ! git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1\\t=> \\2/' | sort
 	master = checkout master
 	rm-submodule = ! ~/.gitscripts/rm-submodule.sh 
