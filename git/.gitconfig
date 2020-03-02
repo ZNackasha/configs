@@ -8,7 +8,7 @@
 	trash = ! git fetch && git reset --hard origin/$(git branch-name)
 	aliases = ! git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1\\t=> \\2/' | sort
 	master = checkout master	
-	rm-branch = ! git checkout -d
+	rm-branch = ! git branch -d
 	rm-submodule = ! ~/.gitscripts/rm-submodule.sh 
 	ignorefy = ! get rm -r --cached . && git add .
 	rename-branch = branch -m
