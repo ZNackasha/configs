@@ -3,7 +3,8 @@
 	amend = commit --amend --no-edit
 	backup = ! git stash save --include-untracked $1 && git stash apply
 	branch-name = ! git branch | grep \\* | cut -d ' ' -f2
-	ignorefy = ! get rm -r --cached . && git add .
+	checkpoint = ! git commit -m "checkpoint" --no-verify
+	ignoreafy = ! get rm -r --cached . && git add .
 	master = checkout master
 	new-branch = ! git checkout -b
 	post = ! git push --set-upstream origin $(git branch-name)
